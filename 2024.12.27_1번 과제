@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int calculateTotal(double score[5], int size) {
+	double total = 0;
+	for (int i = 0;i < size;i++) {
+		total += score[i];
+	}
+	return total;
+}
+
+double calculateAverage(double total, int size) {
+	return total / size;
+
+}
+
+int main() {
+	double score[5];
+
+	for (int i = 0;i< 5; i++) {
+		cout << i + 1 << "번째 학생의 점수를 입력하시오:";
+		cin >> score[i];
+
+	}
+
+	double total = calculateTotal(score, 5);
+	double average = calculateAverage(total, 5);
+
+	cout << "총점" << total << endl;
+	cout << "평균" << average << endl;
+
+
+	return 0;
+
+
+}
+
+
