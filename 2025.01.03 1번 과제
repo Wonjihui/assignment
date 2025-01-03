@@ -46,7 +46,7 @@ public:
                 cout << "-" << books[i].title << "by" << books[i].author << endl;
             }
             else {
-                cout << "책을 찾지 못하였습니다" << endl;
+                cout << "책을 찾지 못하였습니다." << endl;
             }
         }
     }
@@ -60,7 +60,7 @@ public:
             }
 
             else {
-                cout << "작가를 찾지 못하였습니다" << endl;
+                cout << "작가를 찾지 못하였습니다." << endl;
             }
             
         }
